@@ -1,0 +1,9 @@
+services:
+  litellm:
+    build:
+      target: deps # Optional if we had multi-stage, but keeping it simple for now
+    command: [ "--config", "/app/config.yaml", "--port", "4000", "--detailed_debug" ]
+    volumes:
+      - ./config.yaml:/app/config.yaml
+    environment:
+      - NODE_ENV=development # Just in case, though it's Python
