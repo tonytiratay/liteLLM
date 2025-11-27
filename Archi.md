@@ -120,7 +120,7 @@ Coolify simplifie grandement le déploiement. Voici comment il interagit avec ce
 
 **Configuration recommandée pour ce projet dans Coolify :**
 - **Build Pack** : Dockerfile
-- **Dockerfile Path** : `/Dockerfile`
-- **Port** : `3001` (Comme exposé dans votre Dockerfile)
+- **Dockerfile Path** : `.docker/prod/Dockerfile`
+- **Port** : `4000` (Comme exposé dans votre Dockerfile)
 
 Coolify gérera automatiquement les certificats SSL (HTTPS) et le routage du domaine vers ce port.
