@@ -15,6 +15,7 @@ services:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
       GEMINI_API_KEY: ${GEMINI_API_KEY}
+      STORE_MODEL_IN_DB: "True"
     command: [ "--config", "/app/config.yaml", "--port", "4000" ]
     depends_on:
       - redis
