@@ -10,7 +10,7 @@ services:
     env_file:
       - .env
     environment:
-      LITELLM_MASTER_KEY: ${LITELLM_MASTER_KEY:-sk-1234}
+      LITELLM_MASTER_KEY: ${LITELLM_MASTER_KEY}
       DATABASE_URL: postgres://${DB_USER:-user}:${DB_PASSWORD:-password}@db:5432/${DB_NAME:-litellm}
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
