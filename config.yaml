@@ -40,7 +40,6 @@ litellm_settings:
   drop_params: true
   guardrails:
     - anthropic-sanitizer:
-        litellm_params:
-          guardrail: "guardrails/anthropic_guardrail.py"
-          mode: "pre_call"
+        guardrail: "guardrails/anthropic_guardrail.py"
+        mode: "pre_call"
   # callbacks: ["otel", "langfuse"] # Example callbacks

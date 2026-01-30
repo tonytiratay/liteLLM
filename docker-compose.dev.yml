@@ -6,6 +6,7 @@ services:
     command: [ "--config", "/app/config.yaml", "--port", "4000", "--detailed_debug" ]
     volumes:
       - ./config.yaml:/app/config.yaml
+      - ./guardrails:/app/guardrails
     ports:
       - "4000:4000"
     environment:
