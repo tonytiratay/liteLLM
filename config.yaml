@@ -39,7 +39,7 @@ model_list:
 litellm_settings:
   drop_params: true
   guardrails:
-    - guardrail_name: "anthropic-sanitizer"
-      litellm_params:
+    - anthropic-sanitizer:
         guardrail: "anthropic_guardrail.AnthropicGuardrail"
+        mode: "pre_call"
   # callbacks: ["otel", "langfuse"] # Example callbacks
