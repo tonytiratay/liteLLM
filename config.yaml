@@ -10,6 +10,16 @@ model_list:
       model: gemini/gemini-3-flash-preview
       api_key: os.environ/GEMINI_API_KEY
 
+  - model_name: gpt-5.2
+    litellm_params:
+      model: openai/gpt-5.2
+      api_key: os.environ/OPENAI_API_KEY
+
+  - model_name: gpt-5.1-mini
+    litellm_params:
+      model: openai/gpt-5.1-mini
+      api_key: os.environ/OPENAI_API_KEY
+
   - model_name: claude-4.5-sonnet
     litellm_params:
       model: anthropic/claude-sonnet-4-5
