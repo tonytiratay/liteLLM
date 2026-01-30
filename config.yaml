@@ -31,8 +31,6 @@ model_list:
       cache_control_injection_points: 
         - role: system
           location: message
-        - role: user
-          location: message
         - role: tool
           location: message
 
@@ -43,8 +41,6 @@ model_list:
       cache_control_injection_points: 
         - role: system
           location: message
-        - role: user
-          location: message
         - role: tool
           location: message
 
@@ -54,8 +50,6 @@ model_list:
       api_key: os.environ/ANTHROPIC_API_KEY
       cache_control_injection_points: 
         - role: system
-          location: message
-        - role: user
           location: message
         - role: tool
           location: message
