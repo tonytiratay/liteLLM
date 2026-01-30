@@ -15,12 +15,14 @@ model_list:
       model: openai/responses/gpt-5.2
       api_key: os.environ/OPENAI_API_KEY
       stream_options: {"include_usage": true}
+      merge_reasoning_content_in_choices: true
 
   - model_name: gpt-5.1-mini
     litellm_params:
       model: openai/responses/gpt-5.1-mini
       api_key: os.environ/OPENAI_API_KEY
       stream_options: {"include_usage": true}
+      merge_reasoning_content_in_choices: true
 
   - model_name: claude-4.5-sonnet
     litellm_params:
